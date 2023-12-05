@@ -4,9 +4,14 @@ html, body {
 
 body {
     background-color: #F3D701;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -22,29 +27,53 @@ header h1 {
     text-shadow: 1px 2px 2px #322214;
 }
 
-main {
+.lista {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    display: flex;
     background-color: #EEF0F2;
-    width: 75%;
+    width: 80%;
+    max-width: 960px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*main {
+    background-color: #EEF0F2;
+    width: 80%;
     max-width: 960px;
     min-width: 300px;
     margin: auto;
     border-radius: 8px;
     padding: 10px;
-}
+    justify-content: center;
+}*/
 
 .itemDaLista {
-    display: inline-block;
+    list-style-type: none;
     width: 240px;
-    margin: 15px;
+    margin: 19px;
     text-align: center;
     border-radius: 8px;
     border: 1px solid #636564;
     box-shadow: 1px 1px 1px #636564;
+    background-color: #EEF0F2;  
 }
 
-.itemDaLista img {
+.imagemUsuario img {
     border-radius: 50%;
-    margin: 6px 0 0 15px;
+    border: green 5px solid;
+    margin: 18px;
+    padding: 2px;
+}
+
+.status {
+    margin: 0;
+    color: #636564;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nome {
@@ -54,14 +83,28 @@ main {
     font-weight: 500;
 }
 
+.email, .telefone {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
 .iconesContato {
-    background-color: #EEF0F2;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    background-color: #63656457;
 }
 
 .iconesContato img {
-    padding: 5px 10px 5px 13px;
+    padding: 5px 10px 5px 13px;    
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    color: #3C0000;
+    font-family: 'Andale Mono', monospace, sans-serif;
+    padding-top: 24px;
 }
 
 
